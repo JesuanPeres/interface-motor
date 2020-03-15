@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deslocamento Linear v1.0</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <label for="ports-select">Escolha a porta:</label>
+            <select name="ports-select" id="ports-select">
+            </select>
+            <button class="btn" id="connect">Conectar</button>
+            <button class="btn" id="reload">Recarregar portas</button>
+        </header>
+        <main>
+            <button onclick="sendMessage(id)" class="control-button" id="up"></button>
+            <button onclick="sendMessage(id)" class="control-button" id="down"></button>
+            <button onclick="sendMessage(id)" class="control-button" id="center"></button>
+            <button onclick="sendMessage(id)" class="control-button" id="left"></button>
+            <button onclick="sendMessage(id)" class="control-button" id="right"></button>
+        </main>
+
+    </div>
+    <!-- <button id="led">LED</button> -->
+
+    <script src="index.js"></script>
+</body>
+</html>
