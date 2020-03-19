@@ -13,56 +13,126 @@
 }
 
 header{
+    padding: 0 10px;
     grid-area: header;
+    display: grid;
+    /* justify-content: center; */
+    grid-auto-flow: column;
+    column-gap: 5px;
+    align-content: center;
+    background: #000000;
+    color:#fff;
 }
 
 main{
     grid-area: main;
     display: grid;
-    grid-template-columns: 32% 12% 12% 12% 32%;
-    grid-template-rows: 20vh 20vh 20vh;
-    grid-template-areas: ". . up . ." ". left center right ." ". . down . .";
-
-    background-image: url('img/controle_background.svg');
-    background-size: 60vh;
-    background-repeat: no-repeat;
-    background-position: center;
+    grid-template-columns: auto 60px 60px 60px auto;
+    grid-template-rows: auto 60px 60px 60px auto;
+    grid-template-areas: ". . . . ." ". . up . ." ". left center right ." ". . down . ." ". . . . .";
+    /* background: rgb(190, 185, 185); */
+    
 }
 
 footer{
     grid-area: footer;
+    background: #000000;
+    color:#fff;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
 
 #up{
     grid-area: up;
+    background-image: url('img/up.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#up:active{
+    background-image: url('img/up-clicked.png');
 }
 
 #down{
     grid-area: down;
+    background-image: url('img/down.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#down:active{
+    background-image: url('img/down-clicked.png');
 }
 
 #center{
     grid-area: center;
+    background-image: url('img/center.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#center:active{
+    background-image: url('img/center-clicked.png');
 }
 
 #left{
     grid-area: left;
+    background-image: url('img/left.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#left:active{
+    background-image: url('img/left-clicked.png');
 }
 
 #right{
     grid-area: right;
+    background-image: url('img/right.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#right:active{
+    background-image: url('img/right-clicked.png');
 }
 
 .control-button{
     background-color: transparent;
-    /* border: none; */
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
+
+/* .control-button{}
+    outline: none;
+} */
 
 label{
-    margin: 10px;
+    display: grid;
+    align-content: center;
+    justify-content: right;
 }
 
+
 .btn{
-    height: 30px;
+    padding: 5px;
     border-radius: 5px;
+    border: 1px #000;
+    border-style: solid;
 }
+
+.select{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px #000;
+    border-style: solid;
+}
+

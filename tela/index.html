@@ -10,22 +10,22 @@
     <div class="container">
         <header>
             <label for="ports-select">Escolha a porta:</label>
-            <select name="ports-select" id="ports-select">
+            <select class="select" name="ports-select" id="ports-select">
             </select>
             <button class="btn" id="connect">Conectar</button>
             <button class="btn" id="reload">Recarregar portas</button>
         </header>
         <main>
-            <button onclick="sendMessage(id)" class="control-button" id="up"></button>
-            <button onclick="sendMessage(id)" class="control-button" id="down"></button>
-            <button onclick="sendMessage(id)" class="control-button" id="center"></button>
-            <button onclick="sendMessage(id)" class="control-button" id="left"></button>
-            <button onclick="sendMessage(id)" class="control-button" id="right"></button>
+            <button class="control-button" id="up"></button>
+            <button class="control-button" id="down"></button>
+            <button class="control-button" id="center"></button>
+            <button class="control-button" id="left"></button>
+            <button class="control-button" id="right"></button>
         </main>
-
+        <footer>
+            Desenvolvido por Jesuan Peres em Electron 
+        </footer>
     </div>
-    <!-- <button id="led">LED</button> -->
-
     <script src="index.js"></script>
 </body>
 </html>

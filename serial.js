@@ -11,21 +11,20 @@ module.exports = {
                 return port;
             }
         });
-
         return avaliablePorts;
     },
 
     createSerial(port_path, baudRate){
         if(serialPort){
             this.closeSerial();
-            console.log('port opened');
         }
-
         serialPort = new SerialPort(port_path, {baudRate});
     },
 
     sendMessage(message){
-        serialPort.write(message);
+        if(serialPort){
+            serialPort.write(message);
+        }
     },
 
     closeSerial(){

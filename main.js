@@ -5,8 +5,8 @@ const serial = require('./serial');
 
 function createWindow () {
     let win = new BrowserWindow({
-        width: 500,
-        height: 300,
+        width: 600,
+        height: 400,
         webPreferences: {
             nodeIntegration: true
         }
